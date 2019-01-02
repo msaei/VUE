@@ -32,14 +32,11 @@
         <p>{{ greet('midnight') }}</p>
         <a :href="url">Udemy website</a>
         <p :class="classes">this is very hard to keep coding!</p>
-        <input type="text" name="" id="" :value="name">
-        <p>I earn ${{wage}} per hour!</p>
-        <button v-on:click="changeWage(1)">Increase the wage by $1</button>
-        <button v-on:click="changeWage(-1)">Decrease the wage by $1</button>
-        <button v-on:dblclick="changeWage(5)">increase the wage by $5</button>
-        <button v-on:dblclick="changeWage(-5)">Decrease the wage by $5</button>
+        <h3 v-if="showName">{{ name }}</h3>
+        <h3 v-else="showName">name is private</h3>
+        <button @click="toggleShowname">toggle {{showName}}</button>
         <div class="canvas" @mousemove="changeCords">{{ cords.x }} , {{ cords.y }}</div>
-        <h3>{{name}}</h3>
+
         <input type="text" name="" id="" @keyup="updateName">
         <input type="text" name="" id="" v-model="name">
         <input type="text" name="" id="" v-model="name">

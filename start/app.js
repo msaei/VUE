@@ -9,7 +9,8 @@ new Vue({
         cords: {
             x: 0,
             y: 0
-        }
+        },
+        showName: true
     },
     methods: {
         greet(time) {
@@ -31,6 +32,9 @@ new Vue({
         },
         logClick() {
             console.log("got clicked!")
+        },
+        toggleShowname() {
+            this.showName = !this.showName
         }
     }
 })
