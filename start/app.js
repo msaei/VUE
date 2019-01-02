@@ -24,6 +24,10 @@ new Vue({
         changeCords(e) {
             this.cords.x = e.offsetX
             this.cords.y = e.offsetY
+        },
+        updateName(e) {
+            //console.log(e.target.value)
+            this.name = e.target.value
         }
     }
 })

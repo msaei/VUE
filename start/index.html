@@ -39,6 +39,8 @@
         <button v-on:dblclick="changeWage(5)">increase the wage by $5</button>
         <button v-on:dblclick="changeWage(-5)">Decrease the wage by $5</button>
         <div class="canvas" @mousemove="changeCords">{{ cords.x }} , {{ cords.y }}</div>
+        <h3>{{name}}</h3>
+        <input type="text" name="" id="" @keyup="updateName">
     </div>
 
     <script src="app.js">
