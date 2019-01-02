@@ -10,7 +10,13 @@ new Vue({
             x: 0,
             y: 0
         },
-        showName: true
+        showName: true,
+        items: ["coding", "cooking", "cycling"],
+        friends: [
+            { name: "will", age: "33" },
+            { name: "memo", age: "44" },
+            { name: "jen", age: "30" },
+        ]
     },
     methods: {
         greet(time) {

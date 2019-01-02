@@ -18,7 +18,7 @@
         
         .canvas {
             width: 400px;
-            height: 200px;
+            height: 100px;
             margin-top: 30px;
             background-color: #ddd;
         }
@@ -26,9 +26,9 @@
 </head>
 
 <body>
-    <h1> First VUE!</h1>
+
     <div id="app">
-        <h2>{{ title }}</h2>
+
         <p>{{ greet('midnight') }}</p>
         <a :href="url">Udemy website</a>
         <p :class="classes">this is very hard to keep coding!</p>
@@ -42,6 +42,13 @@
         <input type="text" name="" id="" v-model="name">
         <a href="http://www.google.com" @click.prevent="logClick">
         Google</a>
+        <div v-for="(friend, index) in friends">
+            <p>{{index}} -{{ friend.name }}</p>
+            <p>{{ friend.age }}</p>
+        </div>
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
     </div>
 
     <script src="app.js">
