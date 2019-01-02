@@ -15,6 +15,13 @@
         .wrong {
             text-decoration: line-through;
         }
+        
+        .canvas {
+            width: 400px;
+            height: 200px;
+            margin-top: 30px;
+            background-color: #ddd;
+        }
     </style>
 </head>
 
@@ -31,6 +38,7 @@
         <button v-on:click="changeWage(-1)">Decrease the wage by $1</button>
         <button v-on:dblclick="changeWage(5)">increase the wage by $5</button>
         <button v-on:dblclick="changeWage(-5)">Decrease the wage by $5</button>
+        <div class="canvas" @mousemove="changeCords">{{ cords.x }} , {{ cords.y }}</div>
     </div>
 
     <script src="app.js">

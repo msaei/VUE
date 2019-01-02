@@ -5,7 +5,11 @@ new Vue({
         name: "mehdi",
         classes: ["red", "wrong"],
         url: "https://www.udemy.com",
-        wage: 11
+        wage: 11,
+        cords: {
+            x: 0,
+            y: 0
+        }
     },
     methods: {
         greet(time) {
@@ -13,6 +17,13 @@ new Vue({
         },
         changeWage(amount) {
             this.wage += amount;
+        },
+        logevent(e) {
+            console.log(e)
+        },
+        changeCords(e) {
+            this.cords.x = e.offsetX
+            this.cords.y = e.offsetY
         }
     }
 })
