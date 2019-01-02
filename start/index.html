@@ -26,6 +26,11 @@
         <a :href="url">Udemy website</a>
         <p :class="classes">this is very hard to keep coding!</p>
         <input type="text" name="" id="" :value="name">
+        <p>I earn ${{wage}} per hour!</p>
+        <button v-on:click="changeWage(1)">Increase the wage by $1</button>
+        <button v-on:click="changeWage(-1)">Decrease the wage by $1</button>
+        <button v-on:dblclick="changeWage(5)">increase the wage by $5</button>
+        <button v-on:dblclick="changeWage(-5)">Decrease the wage by $5</button>
     </div>
 
     <script src="app.js">
