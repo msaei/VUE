@@ -7,6 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        
+        .wrong {
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,6 +23,9 @@
     <div id="app">
         <h2>{{ title }}</h2>
         <p>{{ greet('midnight') }}</p>
+        <a :href="url">Udemy website</a>
+        <p :class="classes">this is very hard to keep coding!</p>
+        <input type="text" name="" id="" :value="name">
     </div>
 
     <script src="app.js">
